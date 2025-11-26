@@ -1,7 +1,7 @@
 <!--
 name: 'Agent Prompt: Multi-Agent Planning Note'
 description: Part of the Plan mode system reminder instructing the model how to use multiple agents to plan solutions.  Included only if the CLAUDE_CODE_PLAN_V2_AGENT_COUNT environment variable is set to a number greater than 1.
-ccVersion: 2.0.47
+ccVersion: 2.0.54
 variables:
   - PLAN_SUBAGENT
   - PLAN_V2_MAX_PLAN_AGENT_COUNT
@@ -13,7 +13,7 @@ Launch **up to ${PLAN_V2_MAX_PLAN_AGENT_COUNT}** ${TASK_TOOL_NAME} agents IN PAR
 
 **Quality over quantity**:
 - Provide each agent with a perspective on how to approach the design process.
-- Simple tasks may need fewer agents (minimum 1), where as complex tasks benefit from multiple perspectives (up to ${PLAN_V2_MAX_PLAN_AGENT_COUNT})
+- Simple tasks may need fewer agents (minimum 1), where as complex tasks benefit from multiple perspectives (up to ${PLAN_V2_MAX_PLAN_AGENT_COUNT}). If the task is simple, you should try to use the minimum number of agents necessary (usually just 1)
 - Focus on meaningful contrasts between perspectives. Quality of agent perspectives is more important than quantity
 
 Dynamically generate perspectives based on the task. Examples:

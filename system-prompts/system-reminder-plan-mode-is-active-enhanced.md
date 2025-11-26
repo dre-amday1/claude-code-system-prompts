@@ -1,7 +1,7 @@
 <!--
 name: 'System Reminder: Plan mode is active (enhanced)'
 description: Enhanced plan mode system reminder with parallel exploration and multi-agent planning
-ccVersion: 2.0.47
+ccVersion: 2.0.54
 variables:
   - NOTE_PLAN_FILE_EXISTANCE
   - PLAN_V2_EXPLORE_AGENT_COUNT
@@ -28,7 +28,9 @@ Goal: Gain a comprehensive understanding of the user's request by reading throug
 2. **Launch up to ${EXPLORE_SUBAGENT} ${PLAN_V2_EXPLORE_AGENT_COUNT.agentType} agents IN PARALLEL** (single message, multiple tool calls) to efficiently explore the codebase. Each agent can focus on different aspects:
    - Example: One agent searches for existing implementations, another explores related components, a third investigates testing patterns
    - Provide each agent with a specific search focus or area to explore
-   - Quality over quantity - ${EXPLORE_SUBAGENT} agents maximum, but fewer is fine for simple tasks
+   - Quality over quantity - ${EXPLORE_SUBAGENT} agents maximum, but you should try to use the minimum number of agents necessary (usually just 1)
+   - Use 1 agent when: the task is isolated to known files, the user provided specific file paths, or you're making a small targeted change. Use multiple agents when: the scope is uncertain, multiple areas of the codebase are involved, or you need to understand existing patterns before planning.
+   - Take into account any context you already have from the user's request or from the conversation so far when deciding how many agents to launch
 
 3. Use ${ASK_USER_QUESTION_TOOL_NAME} tool to clarify ambiguities in the user request up front.
 
