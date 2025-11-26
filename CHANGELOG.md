@@ -4,6 +4,13 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
+# [2.0.54](https://github.com/Piebald-AI/claude-code-system-prompts/commit/3bd3a890d18146df0f3699d276133fe92d68e4b5)
+
+_+128 tokens_
+
+- Multi-Agent Planning Note: Added a note discouraging overuse of multiple plan agents: _If the task is simple, you should try to use the minimum number of agents necessary (usually just 1)_
+- Added a similar longer note to the "Plan mode is active" system reminder
+
 #### [2.0.53](https://github.com/Piebald-AI/claude-code-system-prompts/commit/9e92d4f32a00e248ad0883ae432658caa2eb298b)
 
 <sub>_No changes to the system prompts in v2.0.53._</sub>
