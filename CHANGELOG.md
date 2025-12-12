@@ -4,6 +4,12 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
+# [2.0.66](https://github.com/Piebald-AI/claude-code-system-prompts/commit/fa26cb89380bbb0f83117a14015104defa41861e)
+
+_+172 tokens_
+
+- **NEW:** System Prompt: Scratchpad directory - instructions for using a dedicated session-specific scratchpad directory for temporary files instead of `/tmp`
+
 # [2.0.65](https://github.com/Piebald-AI/claude-code-system-prompts/commit/c527901340dda30950eb667af9d7a31d7dcb30ee)
 
 _+97 tokens_
