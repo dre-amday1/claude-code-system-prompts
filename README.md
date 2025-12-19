@@ -28,7 +28,7 @@ Download it and try it out for free!  **https://piebald.ai/**
 
 [![Mentioned in Awesome Claude Code](https://awesome.re/mentioned-badge.svg)](https://github.com/hesreallyhim/awesome-claude-code)
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.0.72](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.0.72) (December 17th, 2025).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 53 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.0.73](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.0.73) (December 18th, 2025).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 54 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
 
 Why multiple "system prompts?"
 
@@ -81,11 +81,12 @@ Sub-agents and utilities.
 - [Agent Prompt: Bash command file path extraction](./system-prompts/agent-prompt-bash-command-file-path-extraction.md) (**286** tks) - System prompt for extracting file paths from bash command output.
 - [Agent Prompt: Bash command prefix detection](./system-prompts/agent-prompt-bash-command-prefix-detection.md) (**835** tks) - System prompt for detecting command prefixes and command injection.
 - [Agent Prompt: Bash output summarization](./system-prompts/agent-prompt-bash-output-summarization.md) (**605** tks) - System prompt for determining whether bash command output should be summarized.
-- [Agent Prompt: Claude guide agent](./system-prompts/agent-prompt-claude-guide-agent.md) (**765** tks) - System prompt for the claude-guide agent that helps users understand and use Claude Code, the Claude Agent SDK and the Claude API effectively..
+- [Agent Prompt: Claude guide agent](./system-prompts/agent-prompt-claude-guide-agent.md) (**763** tks) - System prompt for the claude-guide agent that helps users understand and use Claude Code, the Claude Agent SDK and the Claude API effectively..
 - [Agent Prompt: Conversation summarization with additional instructions](./system-prompts/agent-prompt-conversation-summarization-with-additional-instructions.md) (**1133** tks) - Extended summarization prompt with support for custom additional instructions.
 - [Agent Prompt: Conversation summarization](./system-prompts/agent-prompt-conversation-summarization.md) (**1121** tks) - System prompt for creating detailed conversation summaries.
 - [Agent Prompt: Exit plan mode with swarm](./system-prompts/agent-prompt-exit-plan-mode-with-swarm.md) (**466** tks) - System reminder for when ExitPlanMode is called with `isSwarm` set to true..
 - [Agent Prompt: Prompt Hook execution](./system-prompts/agent-prompt-prompt-hook-execution.md) (**134** tks) - Prompt given to Claude when acting evaluating whether to pass or fail a prompt hook..
+- [Agent Prompt: Prompt Suggestion Generator v2](./system-prompts/agent-prompt-prompt-suggestion-generator-v2.md) (**296** tks) - V2 instructions for generating prompt suggestions for Claude Code.
 - [Agent Prompt: Session notes template](./system-prompts/agent-prompt-session-notes-template.md) (**292** tks) - Template structure for session notes tracking coding work and decisions.
 - [Agent Prompt: Session notes update instructions](./system-prompts/agent-prompt-session-notes-update-instructions.md) (**756** tks) - Instructions for updating session notes files during conversations.
 - [Agent Prompt: Session title and branch generation](./system-prompts/agent-prompt-session-title-and-branch-generation.md) (**333** tks) - System prompt for generating succinct titles and git branch names for coding sessions.
@@ -107,7 +108,7 @@ Misc large strings.
 
 Parts of the main system prompt.
 
-- [**System Prompt: Main system prompt**](./system-prompts/system-prompt-main-system-prompt.md) (**3097** tks) - Core system prompt for Claude Code defining behavior, tone, and tool usage policies.
+- [**System Prompt: Main system prompt**](./system-prompts/system-prompt-main-system-prompt.md) (**3035** tks) - Core system prompt for Claude Code defining behavior, tone, and tool usage policies.
 - [System Prompt: Claude in Chrome browser automation](./system-prompts/system-prompt-claude-in-chrome-browser-automation.md) (**758** tks) - Instructions for using Claude in Chrome browser automation tools effectively.
 - [System Prompt: Git status](./system-prompts/system-prompt-git-status.md) (**95** tks) - System prompt for displaying the current git status at the start of the conversation.
 - [System Prompt: Learning mode (insights)](./system-prompts/system-prompt-learning-mode-insights.md) (**142** tks) - Instructions for providing educational insights when learning mode is active.
@@ -136,16 +137,15 @@ Text for large system reminders.
 - [Tool Description: ExitPlanMode](./system-prompts/tool-description-exitplanmode.md) (**342** tks) - Description for the ExitPlanMode tool, which presents a plan dialog for the user to approve.
 - [Tool Description: Glob](./system-prompts/tool-description-glob.md) (**122** tks) - Tool description for file pattern matching and searching by name.
 - [Tool Description: Grep](./system-prompts/tool-description-grep.md) (**300** tks) - Tool description for content search using ripgrep.
-- [Tool Description: LSP](./system-prompts/tool-description-lsp.md) (**194** tks) - Description for the LSP tool..
+- [Tool Description: LSP](./system-prompts/tool-description-lsp.md) (**255** tks) - Description for the LSP tool..
 - [Tool Description: MCPSearch](./system-prompts/tool-description-mcpsearch.md) (**477** tks) - Tool description for the MCPSearch tool.
 - [Tool Description: NotebookEdit](./system-prompts/tool-description-notebookedit.md) (**121** tks) - Tool description for editing Jupyter notebook cells.
 - [Tool Description: ReadFile](./system-prompts/tool-description-readfile.md) (**439** tks) - Tool description for reading files.
-- [Tool Description: Skill](./system-prompts/tool-description-skill.md) (**292** tks) - Tool description for executing skills in the main conversation.
-- [Tool Description: SlashCommand](./system-prompts/tool-description-slashcommand.md) (**355** tks) - Tool description for executing slash commands.
+- [Tool Description: Skill](./system-prompts/tool-description-skill.md) (**399** tks) - Tool description for executing skills in the main conversation.
 - [Tool Description: TaskList](./system-prompts/tool-description-tasklist.md) (**307** tks) - Description for the TaskList tool, which lists all tasks in the task list.
 - [Tool Description: TaskUpdate](./system-prompts/tool-description-taskupdate.md) (**615** tks) - Description for the TaskUpdate tool, which updates Claude's task list.
 - [Tool Description: Task](./system-prompts/tool-description-task.md) (**1214** tks) - Tool description for launching specialized sub-agents to handle complex tasks.
-- [Tool Description: TeammateTool's operation parameter](./system-prompts/tool-description-teammatetools-operation-parameter.md) (**163** tks) - Tool description for the TeammateTool's operation parameter.
+- [Tool Description: TeammateTool's operation parameter](./system-prompts/tool-description-teammatetools-operation-parameter.md) (**209** tks) - Tool description for the TeammateTool's operation parameter.
 - [Tool Description: TodoWrite](./system-prompts/tool-description-todowrite.md) (**2167** tks) - Tool description for creating and managing task lists.
 - [Tool Description: WebFetch](./system-prompts/tool-description-webfetch.md) (**265** tks) - Tool description for web fetch functionality.
 - [Tool Description: WebSearch](./system-prompts/tool-description-websearch.md) (**334** tks) - Tool description for web search functionality.

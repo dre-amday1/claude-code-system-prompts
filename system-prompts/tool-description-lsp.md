@@ -1,7 +1,7 @@
 <!--
 name: 'Tool Description: LSP'
 description: Description for the LSP tool.
-ccVersion: 2.0.65
+ccVersion: 2.0.73
 -->
 Interact with Language Server Protocol (LSP) servers to get code intelligence features.
 
@@ -12,6 +12,9 @@ Supported operations:
 - documentSymbol: Get all symbols (functions, classes, variables) in a document
 - workspaceSymbol: Search for symbols across the entire workspace
 - goToImplementation: Find implementations of an interface or abstract method
+- prepareCallHierarchy: Get call hierarchy item at a position (functions/methods)
+- incomingCalls: Find all functions/methods that call the function at a position
+- outgoingCalls: Find all functions/methods called by the function at a position
 
 All operations require:
 - filePath: The file to operate on
