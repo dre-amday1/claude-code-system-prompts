@@ -1,9 +1,10 @@
 <!--
 name: 'Tool Description: WebSearch'
 description: Tool description for web search functionality
-ccVersion: 2.0.56
+ccVersion: 2.1.8
 variables:
   - GET_CURRENT_DATE_FN
+  - CURRENT_YEAR
 -->
 
 - Allows Claude to search the web and use the results to inform responses
@@ -30,4 +31,4 @@ Usage notes:
 
 IMPORTANT - Use the correct year in search queries:
   - Today's date is ${GET_CURRENT_DATE_FN()}. You MUST use this year when searching for recent information, documentation, or current events.
-  - Example: If today is 2025-07-15 and the user asks for "latest React docs", search for "React documentation 2025", NOT "React documentation 2024"
+  - Example: If the user asks for "latest React docs", search for "React documentation ${CURRENT_YEAR}", NOT "React documentation ${CURRENT_YEAR}"
