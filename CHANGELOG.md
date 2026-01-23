@@ -4,6 +4,29 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
+# [2.1.16](https://github.com/Piebald-AI/claude-code-system-prompts/commit/e8da828)
+
+_+7,114 tokens_
+
+- **NEW:** Agent Prompt: Exit plan mode with swarm - System reminder for when ExitPlanMode is called with `isSwarm` set to true
+- **NEW:** System Prompt: Teammate Communication - System prompt for teammate communication in swarm
+- **NEW:** System Prompt: Tool execution denied - System prompt for when tool execution is denied
+- **NEW:** System Reminder: Delegate mode prompt - System reminder for delegate mode
+- **NEW:** System Reminder: Plan mode is active (5-phase) - Enhanced plan mode system reminder with parallel exploration and multi-agent planning
+- **NEW:** System Reminder: Plan mode is active (iterative) - Iterative plan mode system reminder for main agent with user interviewing workflow
+- **NEW:** System Reminder: Team Coordination - System reminder for team coordination
+- **NEW:** System Reminder: Team Shutdown - System reminder for team shutdown
+- **NEW:** Tool Description: TaskCreate - Tool description for TaskCreate tool
+- **NEW:** Tool Description: TaskList - Description for the TaskList tool, which lists all tasks in the task list
+- **NEW:** Tool Description: TeammateTool's operation parameter - Tool description for the TeammateTool's operation parameter
+- **NEW:** Tool Description: TeammateTool - Tool description for the TeammateTool
+- **NEW:** Tool Parameter: Computer action for Computer tool - Action parameter options for the Chrome browser computer tool (includes hover action and other actions)
+- Agent Prompt: /security-review slash command - Renamed from "/security-review slash" for consistency
+- System Prompt: Learning mode - Description metadata updated (removed "System Prompt:" prefix)
+- System Reminder: Plan mode is active (subagent) - Renamed from "Plan mode is active (for subagents)" for consistency
+- Tool Description: Bash (Git commit and PR creation instructions) - Added guidance to avoid using --no-edit flag with git rebase commands, as it is not a valid option for git rebase
+- Tool Description: Write - Description clarified from "creating/overwriting writing individual files" to "for creating and overwriting individual files"
+
 # [2.1.15](https://github.com/Piebald-AI/claude-code-system-prompts/commit/011066d)
 
 _+183 tokens_
