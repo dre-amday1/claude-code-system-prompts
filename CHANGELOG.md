@@ -4,6 +4,13 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
+# [2.1.26](https://github.com/Piebald-AI/claude-code-system-prompts/commit/f8e3357)
+
+_+0 tokens_
+
+- Agent Prompt: Prompt Suggestion Generator (Stated Intent) - Increased maximum suggestion length from 2-8 words to 2-12 words
+- Agent Prompt: Prompt Suggestion Generator v2 - Increased maximum suggestion length from 2-8 words to 2-12 words
+
 #### [2.1.25](https://github.com/Piebald-AI/claude-code-system-prompts/commit/5f194f5)
 
 <sub>_No changes to the system prompts in v2.1.25._</sub>
